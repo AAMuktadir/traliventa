@@ -1,37 +1,48 @@
 export const Paths = [
   {
     id: 1,
-    title: "Home",
+    title: "HOME",
     path: "/",
   },
 
   {
     id: 2,
-    title: "Studio",
-    path: "/#",
+    title: "ACADEMY",
+    path: "/",
   },
 
   {
     id: 3,
-    title: "About Us",
-    path: "/#",
+    title: "CONSULTANT",
+    path: "/",
   },
 
   {
     id: 4,
-    title: "Services",
-    path: "/#services",
+    title: "PRODUCTS",
+    path: "/",
   },
 
   {
     id: 5,
-    title: "Clients",
-    path: "/#clients",
+    title: "BLOGS",
+    path: "/",
   },
 
   {
     id: 5,
-    title: "Contact",
-    path: "/#contact",
+    title: "GALLERY",
+    path: "/",
+  },
+
+  {
+    id: 6,
+    title: "ABOUT",
+    path: "/",
+  },
+  {
+    id: 7,
+    title: "CONTACT",
+    path: "/",
   },
 ];

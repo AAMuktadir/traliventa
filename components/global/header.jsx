@@ -8,8 +8,6 @@ import { usePathname } from "next/navigation";
 import { Paths } from "@/utils/data/navigation";
 
 export default function Header() {
-  const [selectedLogo, setSelectedLogo] = useState(false);
-
   const [isOpen, setIsOpen] = useState(false);
 
   const pathname = usePathname();
@@ -18,25 +16,16 @@ export default function Header() {
     setIsOpen(!isOpen);
   };
 
-  const logo = () => {
-    if (selectedLogo) {
-      return "/Logo-icon-white.png";
-    } else {
-      return "/Logo-icon.png";
-    }
-  };
   return (
-    <nav className="fixed w-full px-3 sm:px-12 py-3 sm:py-6">
-      <div className="bg-white bg-opacity-40 backdrop-blur-sm rounded-2xl flex justify-between items-center">
+    <nav className="fixed w-full px-3 sm:px-12 py-3 sm:py-6 z-50">
+      <div className="flex justify-between items-center ">
         <Link href={"/"} className="p-2 ">
           <Image
-            src={logo()}
-            height={50}
-            width={50}
+            src={"/img/Logo.png"}
+            height={100}
+            width={100}
             alt="logo"
-            className="p-3 bg-white hover:bg-gray-700 duration-300 rounded-xl"
-            onMouseEnter={() => setSelectedLogo(true)}
-            onMouseLeave={() => setSelectedLogo(false)}
+            className=""
           />
         </Link>
 
@@ -48,7 +37,7 @@ export default function Header() {
               className={`${
                 pathname == item.path
                   ? "text-white"
-                  : "text-[#4E4D4D] hover:text-gray-900 duration-300"
+                  : "text-white hover:text-gray-900 duration-300"
               }`}
             >
               {item.title}
