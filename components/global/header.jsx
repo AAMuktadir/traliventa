@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Paths } from "@/utils/data/navigation";
+import SearchToggle from "./searchToggle";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,19 +18,19 @@ export default function Header() {
   };
 
   return (
-    <nav className="fixed w-full px-3 sm:px-12 py-3 sm:py-6 z-50">
+    <nav className="fixed w-full px-3 sm:px-12 py-3 sm:py-2 z-50">
       <div className="flex justify-between items-center ">
         <Link href={"/"} className="p-2 ">
           <Image
             src={"/img/Logo.png"}
-            height={100}
-            width={100}
+            height={70}
+            width={70}
             alt="logo"
             className=""
           />
         </Link>
 
-        <div className="hidden md:flex items-center space-x-8 pr-4">
+        <div className="hidden md:flex items-center space-x-8 pr-4 text-[11px] font-bold">
           {Paths.map((item, id) => (
             <Link
               key={id}
@@ -43,6 +44,10 @@ export default function Header() {
               {item.title}
             </Link>
           ))}
+        </div>
+
+        <div className="">
+          <SearchToggle />
         </div>
         <button onClick={toggleMenu} className="md:hidden block pr-2">
           <svg
