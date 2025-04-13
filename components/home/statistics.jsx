@@ -1,17 +1,9 @@
 import React from "react";
-import Image from "next/image";
 
 export default function Statistics() {
   return (
-    <div className="relative w-full h-full">
-      <Image
-        src={"/img/Background/home/Stat-bg.jpeg"}
-        height={600}
-        width={2000}
-        alt="image"
-      />
-
-      <section className="absolute inset-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="relative w-full h-full bg-[url(/img/Background/home/Stat-bg.jpeg)] bg-cover bg-no-repeat bg-center py-12 sm:py-20">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-0">
         <StatCard title="EVENTS ORGANIZED" value="1,000" />
         <StatCard title="SUBSCRIBERS" value="5,000" />
         <StatCard title="TICKETS SOLD" value="12,000" />

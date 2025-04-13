@@ -46,10 +46,13 @@ export default function Header() {
           ))}
         </div>
 
-        <div className="">
+        <div className="hidden sm:block">
           <SearchToggle />
         </div>
-        <button onClick={toggleMenu} className="md:hidden block pr-2">
+        <button
+          onClick={toggleMenu}
+          className="md:hidden block pr-2 text-white font-bold"
+        >
           <svg
             className="w-6 h-6"
             fill="none"
