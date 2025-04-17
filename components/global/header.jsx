@@ -37,7 +37,7 @@ export default function Header() {
               href={item.path}
               className={`${
                 pathname == item.path
-                  ? "text-white"
+                  ? "text-[#FFF32B] underline"
                   : "text-white hover:text-gray-900 duration-300"
               }`}
             >

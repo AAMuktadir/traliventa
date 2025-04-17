@@ -8,41 +8,41 @@ export const Paths = [
   {
     id: 2,
     title: "ACADEMY",
-    path: "/",
+    path: "/ACADEMY",
   },
 
   {
     id: 3,
     title: "CONSULTANT",
-    path: "/",
+    path: "/CONSULTANT",
   },
 
   {
     id: 4,
     title: "PRODUCTS",
-    path: "/",
+    path: "/PRODUCTS",
   },
 
   {
     id: 5,
     title: "BLOGS",
-    path: "/",
+    path: "/BLOGS",
   },
 
   {
     id: 5,
     title: "GALLERY",
-    path: "/",
+    path: "/GALLERY",
   },
 
   {
     id: 6,
     title: "ABOUT",
-    path: "/",
+    path: "/ABOUT",
   },
   {
     id: 7,
     title: "CONTACT",
-    path: "/",
+    path: "/CONTACT",
   },
 ];
